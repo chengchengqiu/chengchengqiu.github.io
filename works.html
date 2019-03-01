@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- integrate Bootstrap -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- integrate styles.css here -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- integrate emoji -->
+        <!-- reference from: https://afeld.github.io/emoji-css/> -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+
+        <title>Chengcheng Qiu's Webpage</title>
+    </head>
+
+    <body>
+        <!-- Implement a navbar -->
+        <!-- reference from: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav id="homeNavbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #FE6911;">
+        <div class="container-fluid">
+          <!-- navbar logo -->
+          <a class="navbar-brand logo" href="#">
+              Chengcheng &nbsp;<i class="em em-tangerine lg-tangerine"></i>&nbsp;<i class="em em-tangerine sm-tangerine"></i>
+          </a>
+
+            <!-- toggler button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar options -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="index.html">&nbsp;Home&nbsp;&nbsp;</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="profile.html">Profile&nbsp;&nbsp;</a>
+               </li>
+               <li class="active">
+                 <a class="nav-link" href="works.html">Works&nbsp;&nbsp;<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="lifeclips.html">Life Clips</a>
+               </li>
+             </ul>
+            </div>
+        </div>
+        </nav>
+
+        <div class="row">
+        <!-- left-hand side menu for selecting works -->
+        <div class="col">
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h class="submenu_title" >Works</h>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p class="submenu_subtitle">GIS Practices</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle submenu_listing submenu">&#9900;&nbsp;Modeling Space</a>
+
+                        <ul class="collapse list-unstyled submenu_item" id="homeSubmenu">
+                            <li>
+                                <a href="#space1" class="submenu">Homework 1</a>
+                            </li>
+                            <li>
+                                <a href="#space2" class="submenu">Homework 2</a>
+                            </li>
+                            <li>
+                                <a href="#space3" class="submenu">Homework 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle submenu_listing submenu">&#9900;&nbsp;Modeling Objects</a>
+
+                        <ul class="collapse list-unstyled submenu_item" id="pageSubmenu">
+                            <li>
+                                <a href="#" class="submenu">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <p class="submenu_subtitle">Google Earth Engine</p>
+                    <li>
+                        <a href="#EE1" class="submenu_listing submenu">&#9900;&nbsp;Forest App</a>
+                    </li>
+                    <p class="submenu_subtitle">Programming</p>
+                      <li>
+                          <a href="#" class="submenu_listing submenu">&#9900;&nbsp;Data Visualizer</a>
+                      </li>
+                      <li>
+                          <a href="#" class="submenu_listing submenu">&#9900;&nbsp;Bell's Group Site</a>
+                      </li>
+                </ul>
+            </nav>
+
+        </div>
+        </div>
+
+        <div class="col">
+        </div>
+
+          <!-- footer, resembles the logo -->
+          <footer class="footnote">
+              <i class="em em-tangerine sm-tangerine"></i> This website is created by Chengcheng Qiu. <i class="em em-tangerine lg-tangerine"></i>
+              <pre>                                                               <i class="em em-tangerine sm-tangerine"></i></pre>
+          </footer>
+
+        <!-- Optional JavaScript, I'm using these in order to implement my navbar -->
+        <!-- reference from: https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
