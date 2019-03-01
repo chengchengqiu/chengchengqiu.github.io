@@ -180,7 +180,7 @@ a.submenu:visited{
   color:#BBFD77;
 }
 
-h.workfile{
+.workfile{
   display: flex;
   width: 80%;
   align-items: stretch;
