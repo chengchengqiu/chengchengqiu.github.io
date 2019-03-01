@@ -17,12 +17,11 @@
         <title>Chengcheng Qiu's Webpage</title>
     </head>
 
-    <body class="bgif">
+    <body>
         <!-- Implement a navbar -->
         <!-- reference from: https://getbootstrap.com/docs/4.0/components/navbar/ -->
         <nav id="homeNavbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #FE6911;">
         <div class="container-fluid">
-
             <!-- navbar logo -->
             <a class="navbar-brand" href="#">
               Chengcheng <i class="em em-tangerine"></i> <i class="em em-tangerine"></i>
@@ -34,46 +33,115 @@
             <!-- navbar options -->
             <div class="collapse navbar-collapse" id="navbarNav">
              <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Profile</a>
-              </li>
-              <li class="active">
-                <a class="nav-link" href="hobby.html">Hobby<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="lifeclips.html">Life Clips</a>
-              </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="index.html">&nbsp;Home<span class="sr-only">(current)</span>&nbsp;&nbsp;</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="profile.html">Profile&nbsp;&nbsp;</a>
+               </li>
+               <li class="active">
+                 <a class="nav-link" href="works.html">Works&nbsp;&nbsp;</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="lifeclips.html">Life Clips</a>
+               </li>
              </ul>
             </div>
         </div>
         </nav>
 
-        <!-- menu for selecting photo collections -->
-        <div class="simpletext" style="color:#C8D2D6;">
-            <p>
-                <a href="sky.html">Sky Collection</a>
-            </p>
-            <p>
-                <a href="plant.html">Plant Collection</a>
-            </p>
+        <div class="row">
+        <!-- left-hand side menu for selecting works -->
+        <div class="col">
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h class="submenu_title" >Works</h>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p class="submenu_subtitle">GIS Practices</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle submenu_listing submenu">&#9900;&nbsp;Modeling Space</a>
+
+                        <ul class="collapse list-unstyled submenu_item" id="homeSubmenu">
+                            <li>
+                                <a href="#space1" class="submenu">Homework 1</a>
+                            </li>
+                            <li>
+                                <a href="#space2" class="submenu">Homework 2</a>
+                            </li>
+                            <li>
+                                <a href="#space3" class="submenu">Homework 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle submenu_listing submenu">&#9900;&nbsp;Modeling Objects</a>
+
+                        <ul class="collapse list-unstyled submenu_item" id="pageSubmenu">
+                            <li>
+                                <a href="#" class="submenu">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <p class="submenu_subtitle">Google Earth Engine</p>
+                    <li>
+                        <a href="#EE1" class="submenu_listing submenu">&#9900;&nbsp;Forest App</a>
+                    </li>
+                    <p class="submenu_subtitle">Programming</p>
+                      <li>
+                          <a href="#" class="submenu_listing submenu">&#9900;&nbsp;Data Visualizer</a>
+                      </li>
+                      <li>
+                          <a href="#" class="submenu_listing submenu">&#9900;&nbsp;Bell's Group Site</a>
+                      </li>
+                </ul>
+            </nav>
+
+        </div>
         </div>
 
-        <div class="lefttext">
-            <p>
-            <img alt="" width="700" height="850" src="/picture/nightlight.jpg"/>
-            </p>
-            <p style="color:#C8D2D6;">
-                Hobby is, taking photos of skies and plants.
-            </p>
+        <div class="col">
+          <h class="submenu_title">GIS Practices</h>
+          <p class="submenu_listing"> Modeling Space - Local Logic</p>
+          <div id="space1">
+            <h class="workfile">
+              <embed src="/works/locallogic.pdf" width="800px" />
+            </h>
+          </div>
+
+          <div id="space2">
+            <p class="submenu_listing"> Modeling Space - Immediate Concerns</p>
+            <embed src="/works/immediateconcerns.pdf" width="800px" />
+          </div>
+
+          <div id="space3">
+            <p class="submenu_listing"> Modeling Space - Combinatorial Cosmetics</p>
+            <embed src="/works/combinatorialcosmetics.pdf" width="800px" />
+          </div>
+
+          <div id="EE1">
+            <h class="submenu_title">Google Earth Engine</h>
+            <p class="submenu_listing"> Forest App</p>
+            <embed src="/works/forestapp.pdf" width="800px" />
         </div>
 
-        <!-- footer resembles the logo -->
-        <footer class="dashed">
-            <i class="em em-tangerine"></i> <i class="em em-tangerine"></i>
-        </footer>
+          <!-- footer, resembles the logo -->
+          <footer class="footnote">
+              <i class="em em-tangerine sm-tangerine"></i> This website is created by Chengcheng Qiu. <i class="em em-tangerine lg-tangerine"></i>
+              <pre>                                                               <i class="em em-tangerine sm-tangerine"></i></pre>
+          </footer>
 
         <!-- Optional JavaScript, I'm using these in order to implement my navbar -->
         <!-- reference from: https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
