@@ -1,8 +1,3 @@
-/*******************
- * Problem Set 5   *
- * CS50, Fall 2018 *
- *******************/
-
 /* background gif */
 .bgif
 {
@@ -40,6 +35,16 @@
     font-size: 30pt;
     font-family: "Courier New", monospace, sans-serif;
     color:#FEB711;
+}
+
+.name_character
+{
+    text-align: right;
+    margin-right: 500px;
+    margin-top: 150px;
+    font-size: 10pt;
+    font-family: "Courier New", monospace, sans-serif;
+    color:#C8D2D6;
 }
 
 .name_use
@@ -122,6 +127,70 @@
 /* 2. PROFILE PAGE */
 
 
+/* 3. WORKS PAGE */
+.wrapper
+{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding:10px;
+    border:solid;
+    border-width: 2px;
+    border-color:#AFB1B0;
+}
+
+.submenu_title
+{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20pt;
+  color:#FF3333;
+}
+
+.submenu_subtitle
+{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16pt;
+  color:#A1C9FA;
+  margin-top:10px;
+}
+
+.submenu_listing
+{
+  font-family:monospace, sans-serif;
+  font-size: 12pt;
+  color: #F8D4AC;
+}
+
+.submenu_item
+{
+  font-family:monospace, sans-serif;
+  font-size: 12pt;
+  margin-left: 40px;
+  color: #EE7CF6;
+}
+
+a.submenu:hover{
+  background-color: #FF0318;
+  color:white;
+}
+
+a.submenu:visited{
+  color:#BBFD77;
+}
+
+h.workfile{
+  display: flex;
+  width: 90%;
+  align-items: stretch;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding:10px;
+  border:solid;
+  border-width: 2px;
+  border-color:#AFB1B0;
+}
 
 
 
