@@ -232,8 +232,24 @@ a.menu:hover {
   font-size: 11pt;
   color:black;
   margin-top:80px;
-  padding: 10px;
 }
+
+.pagenumber{
+  font-family: monospace, sans-serif;
+  font-size: 11pt;
+  color:#C5B491;
+  margin-top:3px;
+}
+
+.contents{
+  padding: 2px;
+  border-left:solid;
+  border-width:2px;
+  border-color:#E9DFCB;
+  width:auto;
+  align-items: center;
+}
+
 
 .profile_wrapper{
   display: flex;
@@ -267,7 +283,6 @@ a.menu:hover {
   margin-top:15px;
   margin-left:10px;
 }
-
 
 
 
