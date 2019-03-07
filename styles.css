@@ -284,7 +284,14 @@ a.menu:hover {
   margin-left:10px;
 }
 
-
+.visualizer_title{
+  font-family: monospace, sans-serif;
+  font-size: 15pt;
+  color:black;
+  margin-left:100px;
+  margin-top:40px;
+  align-self: center;
+}
 
 
 
